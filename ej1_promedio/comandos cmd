@@ -1,0 +1,157 @@
+Microsoft Windows [Versión 10.0.19045.5679]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\repos\tup_prog_1_2025_guia4>git log --graphs -a
+fatal: unrecognized argument: --graphs
+
+C:\repos\tup_prog_1_2025_guia4>git log --graph -a
+* commit 975819dab59ab0e881eb1675c7ef32c3737413b1 (HEAD -> main, origin/main, origin/HEAD)
+| Author: Fernando Rafael Filipuzzi <69309817+fernandofilipuzzi-utn@users.noreply.github.com>
+| Date:   Sun Apr 6 16:41:33 2025 -0300
+|
+|     Update README.md
+|
+* commit 8d407b3acc2eb17f8d5853e3427b2b673a6ba5df
+| Author: Fernando Rafael Filipuzzi <69309817+fernandofilipuzzi-utn@users.noreply.github.com>
+| Date:   Sun Mar 30 15:42:51 2025 -0300
+|
+|     Update README.md
+|
+* commit 49a321490550eb0e72cd69747f4382980796a10b
+  Author: Fernando Rafael Filipuzzi <69309817+fernandofilipuzzi-utn@users.noreply.github.com>
+  Date:   Sat Mar 29 14:20:24 2025 -0300
+
+      Initial commit
+
+C:\repos\tup_prog_1_2025_guia4>git config user.name
+
+C:\repos\tup_prog_1_2025_guia4>git config user.name iFaustoo
+
+C:\repos\tup_prog_1_2025_guia4>git config user.email faustoordoriguez10@gmail.com
+
+C:\repos\tup_prog_1_2025_guia4>git config user.name
+iFaustoo
+
+C:\repos\tup_prog_1_2025_guia4>git config user.email
+faustoordoriguez10@gmail.com
+
+C:\repos\tup_prog_1_2025_guia4>
+
+-
+  -
+  -
+  -
+  -
+  Microsoft Windows [Versión 10.0.19045.5679]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\repos\tup_prog_1_2025_guia4>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ej1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\repos\tup_prog_1_2025_guia4>git add *
+
+C:\repos\tup_prog_1_2025_guia4>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ej1/ddf_promedio.png
+        new file:   ej1/pseudo_promedio.psc
+
+
+C:\repos\tup_prog_1_2025_guia4>git commit -m "subiendo ejercicio 1"
+[main 7e0111d] subiendo ejercicio 1
+ 2 files changed, 21 insertions(+)
+ create mode 100644 ej1/ddf_promedio.png
+ create mode 100644 ej1/pseudo_promedio.psc
+
+C:\repos\tup_prog_1_2025_guia4>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\repos\tup_prog_1_2025_guia4>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\repos\tup_prog_1_2025_guia4>git push
+info: please complete authentication in your browser...
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 41.78 KiB | 20.89 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/iFaustoo/tup_prog_1_2025_guia4.git
+   975819d..7e0111d  main -> main
+
+C:\repos\tup_prog_1_2025_guia4>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\repos\tup_prog_1_2025_guia4>git pull
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 8 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (8/8), 2.33 KiB | 216.00 KiB/s, done.
+From https://github.com/iFaustoo/tup_prog_1_2025_guia4
+   7e0111d..513bba2  main       -> origin/main
+Updating 7e0111d..513bba2
+Fast-forward
+ {ej1 => ej1_promedio}/ddf_promedio.png    | Bin
+ {ej1 => ej1_promedio}/pseudo_promedio.psc |   2 +-
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ rename {ej1 => ej1_promedio}/ddf_promedio.png (100%)
+ rename {ej1 => ej1_promedio}/pseudo_promedio.psc (88%)
+
+C:\repos\tup_prog_1_2025_guia4>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 6CFF-D845
+
+ Directorio de C:\repos\tup_prog_1_2025_guia4
+
+11/04/2025  09:03    <DIR>          .
+11/04/2025  09:03    <DIR>          ..
+11/04/2025  08:55             7,360 .gitignore
+11/04/2025  09:03    <DIR>          ej1_promedio
+11/04/2025  08:55               178 README.md
+               2 archivos          7,538 bytes
+               3 dirs  337,759,584,256 bytes libres
+
+C:\repos\tup_prog_1_2025_guia4>tree -f
+Listado de rutas de carpetas
+El número de serie del volumen es 0000002A 6CFF:D845
+C:\REPOS\TUP_PROG_1_2025_GUIA4\-F
+Ruta de acceso no válida: \REPOS\TUP_PROG_1_2025_GUIA4\-F
+No existe ninguna subcarpeta
+
+
+C:\repos\tup_prog_1_2025_guia4>tree /f
+Listado de rutas de carpetas
+El número de serie del volumen es 6CFF-D845
+C:.
+│   .gitignore
+│   README.md
+│
+└───ej1_promedio
+        ddf_promedio.png
+        pseudo_promedio.psc
+
+
+C:\repos\tup_prog_1_2025_guia4>
